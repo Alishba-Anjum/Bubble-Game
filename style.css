@@ -88,37 +88,42 @@ body {
   background-color: rgb(126, 72, 89);
 }
 
-
-/* CSS for screens larger than 768px */
-@media only screen and (min-width: 768px) {
+/* CSS for screens up to 767px (mobile devices) */
+@media only screen and (max-width: 767px) {
   .container {
-    width: 60%;
-  }
-  .top {
-    padding: 0 20%;
-  }
-}
-
-/* CSS for screens larger than 992px */
-@media only screen and (min-width: 992px) {
-  .container {
-    width: 40%;
-  }
-  .top {
-    padding: 0 15%;
-  }
-}
-
-/* CSS for screens larger than 1200px */
-@media only screen and (min-width: 1200px) {
-  .container {
-    width: 30%;
+    width: 90%;
   }
   .top {
     padding: 0 10%;
   }
-
-  .bottom{
+  .bottom {
+    padding: 5px;
+    font-size: 30px;
     text-align: center;
+  }
+  .bubble {
+    font-size: 16px;
+    padding: 15px;
+    margin: 5px;
+  }
+}
+
+/* Additional styles for smaller mobile screens if needed */
+@media only screen and (max-width: 480px) {
+  .container {
+    width: 95%;
+  }
+  .top {
+    padding: 0 5%;
+  }
+  .bottom {
+    padding: 5px;
+    font-size: 30px;
+    text-align: center;
+  }
+  .bubble {
+    font-size: 16px;
+    padding: 15px;
+    margin: 5px;
   }
 }
