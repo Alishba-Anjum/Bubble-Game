@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  user-select: none;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  background-color: lightpink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 80%;
+  height: 90%;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow:  6px  5px 5px rgb(130, 85, 93);
+
+}
+.top {
+  height: 90px;
+  width: 100%;
+  background-color: rgb(171, 94, 107);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 30%;
+}
+
+.elem {
+  font-size: 30px;
+  color: white;
+  display: flex;
+  gap: 10px;
+  font-weight: 700;
+}
+.box {
+  width: 40px;
+  height: 35px;
+  background-color: white;
+  color: rgb(171, 94, 107);
+  font-weight: 500;
+  font-size: 22px;
+  text-align: center;
+  padding: 5px;
+}
+.bottom {
+  width: 100%;
+  height: calc(100% - 90px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(189, 59, 81);
+  flex-wrap: wrap;
+  padding: 15px;
+  gap: 15px;
+  font-weight: 800;
+  font-size: 50px;
+  text-shadow: 5px 5px 5px gray;
+  font-family: sans-serif;
+}
+.bubble {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: rgb(171, 94, 107);
+  align-items: center;
+  color: pink;
+  text-align: center;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 500;
+  box-shadow: 3px 3px 2px gray;
+}
+.bubble:hover{
+  background-color: rgb(126, 72, 89);
+}
+
+
+/* CSS for screens larger than 768px */
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 60%;
+  }
+  .top {
+    padding: 0 20%;
+  }
+}
+
+/* CSS for screens larger than 992px */
+@media only screen and (min-width: 992px) {
+  .container {
+    width: 40%;
+  }
+  .top {
+    padding: 0 15%;
+  }
+}
+
+/* CSS for screens larger than 1200px */
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 30%;
+  }
+  .top {
+    padding: 0 10%;
+  }
+
+  .bottom{
+    text-align: center;
+  }
+}
