@@ -91,13 +91,13 @@ body {
   
   .container{
     width: 85%;
-    height: 85%;
+    height: 80%;
     margin: 0 auto;
   }
   .top{
     height: 60px;
     gap: 10px;
-    padding-left: 14%;
+    padding-left: 15%;
   }
   .elem{
     font-size: 20px;
