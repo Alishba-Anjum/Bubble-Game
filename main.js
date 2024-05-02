@@ -4,7 +4,6 @@ let hitrn = 0;
 
 function makeBubbles() {
   let bubbles = "";
-
   for (let i = 1; i <= 108; i++) {
     let number = Math.floor(Math.random() * 10);
     bubbles += `<div class="bubble">${number}</div>`;
