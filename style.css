@@ -26,8 +26,7 @@ body {
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow:  6px  5px 5px rgb(130, 85, 93);
-
+  box-shadow: 6px 5px 5px rgb(130, 85, 93);
 }
 .top {
   height: 90px;
@@ -84,46 +83,47 @@ body {
   font-weight: 500;
   box-shadow: 3px 3px 2px gray;
 }
-.bubble:hover{
+.bubble:hover {
   background-color: rgb(126, 72, 89);
 }
 
-/* CSS for screens up to 767px (mobile devices) */
-@media only screen and (max-width: 767px) {
-  .container {
-    width: 90%;
+@media (max-width: 700px) {
+  
+  .container{
+    width: 85%;
+    height: 85%;
+    margin: 0 auto;
   }
-  .top {
-    padding: 0 10%;
+  .top{
+    height: 60px;
+    gap: 10px;
+    padding-left: 14%;
   }
-  .bottom {
-    padding: 5px;
-    font-size: 30px;
+  .elem{
+    font-size: 20px;
+  }
+  .box{
+    height: 23px;
+    width: 25px;
+    font-size: 15px;
     text-align: center;
+    font-weight: 500;
   }
-  .bubble {
-    font-size: 16px;
-    padding: 15px;
-    margin: 5px;
+  .bubble{
+    height: 35px;
+    width: 35px;
+    font-size: 15px;
+    padding: 10px;
   }
-}
-
-/* Additional styles for smaller mobile screens if needed */
-@media only screen and (max-width: 480px) {
-  .container {
-    width: 95%;
+  .bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  .top {
-    padding: 0 5%;
-  }
-  .bottom {
-    padding: 5px;
+  
+  h1{
     font-size: 30px;
+    font-weight: 800;
     text-align: center;
-  }
-  .bubble {
-    font-size: 16px;
-    padding: 15px;
-    margin: 5px;
   }
 }
